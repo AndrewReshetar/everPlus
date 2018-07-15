@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Merienda');
+
 *{
     margin:0;
     padding:0;
@@ -13,8 +14,8 @@ body{
 header{
     max-width:100%;
     min-height:100px;
-    border:1px solid red;
-    background-color: #333333;
+    
+    
     position:fixed;
     left: 0;
     right: 0; 
@@ -37,12 +38,13 @@ header nav ul li{
 }
 header nav ul li a{
     text-decoration: none;
-    color:#5F5F5F;
+    color: #5c5c5e;
     font-weight:bold;
     transition: .4s all ease;
+    
 }
 header nav ul li a:hover{
-    color:#adadad;
+    color:#464647;
     cursor:pointer;
     transition: .4s all ease;
     text-decoration: underline;
@@ -58,7 +60,7 @@ header nav .logo{
 }
 header nav .logo a{
     font-weight: bold;
-    font-size:1.7em;
+    font-size:1.9em;
     color:#fff;
     font-family: 'Merienda', cursive;
     text-decoration: none;
@@ -67,6 +69,11 @@ header nav .logo a{
 .aniplus {
     margin-left: 5px;
     position:absolute;
+     animation-name: spin;
+    animation-duration: 2200ms;
+    animation-iteration-count: infinite;
+    position:absolute;
+    animation-timing-function: linear;
    
 
 }
@@ -90,14 +97,271 @@ header nav .logo a{
 }
 
 
-
-
-
-
-
-
-
 #carousel{
     position:relative;
     z-index:1;
 }
+
+.scroll{
+    min-height: 60px;
+    background:#191919;
+-webkit-box-shadow: 3px 1px 17px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 1px 17px -5px rgba(0,0,0,0.75);
+box-shadow: 3px 1px 17px -5px rgba(0,0,0,0.75);
+    
+}
+.navscroll{
+    margin-left:15px;
+    font-size:1.3em;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+.logoscroll{
+ position:relative;
+ bottom:15px;
+    
+}
+
+.carousel-inner h2{
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+    font-size: 2.4em;
+}
+
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
+
+
+main section.portfolio{
+    margin-top:7%;
+    text-align: center;
+}
+
+
+main section .gridtable{
+    margin-top:5%;
+}
+
+main section.portfolio h2{
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+}
+
+.gridtable {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin:0 7%;
+  padding: 10px;
+}
+.one {
+  grid-column: 1 ;
+  grid-row: 1 / 4;
+    background-image: url(../img/cap.jpg);
+    background-size: cover;
+}
+
+.gridtable div:hover{
+    
+    opacity: 0.5;
+    
+    cursor:pointer;
+}
+
+.gridtable div p{
+    display:none;
+}
+
+
+.two { 
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+  background-image: url(../img/clock.jpg);
+  background-size: cover;
+  
+}
+.three {
+  grid-column: 3 / 5;
+  grid-row: 1 / 7;
+  background-image: url(../img/suit.jpg);
+  background-size: cover;
+  background-position: center;
+  
+}
+.four {
+  grid-column: 1 / 2;
+  grid-row: 4/ 7;
+  background-image: url(../img/mac.jpg);
+  background-size: cover;
+  background-position: top;
+  
+}
+.five {
+  grid-column: 2;
+  grid-row: 4 / 7;
+  background-image: url(../img/alarmclock.jpg);
+  background-size: cover;
+}
+.six {
+  grid-column: 1 / 2;
+  grid-row: 7 / 10;
+    background-image: url(../img/wallet.jpg);
+  background-size: cover;
+}
+.seven {
+  grid-column: 2 / 5;
+  grid-row: 7 / 10;
+  background-image: url(../img/design.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+article .aboutus{
+    background-color: black;
+    min-height:750px;
+    max-width: 100%;
+    margin-top:5%;
+    background-color: #191919;
+}
+
+article .aboutimg{
+    width:50%;
+    float:left;
+    background-image: url(../img/mountains.jpg);
+    background-size: cover;
+    min-height:750px;
+}
+
+article .aboutdesc h2{
+    text-align: center;
+   top: 35px;
+   position: relative;
+    color:#fff;
+    font-size: 1.8em;
+    line-height: 30px;
+    font-family: 'Merienda', cursive;
+    
+}
+
+article .aboutdesc p{
+    text-align: center;
+    margin:0 5%;
+    top: 185px;
+    left:30px;
+   position: relative;
+    color:#fff;
+    font-size: 1.4em;
+    line-height: 30px;
+    
+}
+
+footer{
+    max-width:100%;
+    min-height:100px;
+    background-color: #fff;
+    color:black;
+}
+
+
+footer p{
+    font-size: 1em;
+    font-weight:bold;
+    margin-left:5%;
+    margin-top:.7%;
+    float:left;
+    color: #5c5c5e;
+}
+
+
+footer .mainfooter #socialnetwork{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top:40px;
+    right: 50px;
+  }
+
+footer .mainfooter #socialnetwork a {
+      margin-right: 30px;
+}
+
+.bg-modal{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display:none;
+}
+.modal-content{
+    width:500px;
+    height:600px;
+    background-color: rgba(1,1,1,1);
+    background-color: white;
+    border-radius:4px;
+    text-align: center;
+    padding:10px;
+    position:relative;
+}
+.formimg{
+    width:15%;
+    margin:10px auto 10px;
+    
+}
+input{
+    width:100%;
+    display:block;
+    margin: 5px auto;
+    padding: 5px;
+}
+.close{
+    position:absolute;
+    top:0;
+    right:14px;
+    font-size:40px;
+    transform:rotate(45deg);
+    cursor:pointer;
+}
+.close:hover{
+    transform:rotate(360deg);
+    animation-iteration-count: infinite;
+}
+
+.button_send{
+width:150px;
+height:40px;
+border-radius:20px;
+background:#459DE5;
+color:#fff;
+font-size:18px;
+cursor:pointer;
+display:inline;
+}
+.button_send:hover{
+    background-color:#3d89c6; 
+}
+
+.button_reset{
+width:150px;
+height:40px;
+border-radius:20px;
+background:#f44842;
+color:#fff;
+font-size:18px;
+cursor:pointer;
+display:inline;
+}
+.button_reset:hover{
+    background-color:#ce3c37; 
+}
+
+
+

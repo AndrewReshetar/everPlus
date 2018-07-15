@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css" type="text/css" />
    
@@ -11,14 +12,15 @@
     <title>Ever+</title>
 </head>
 <body>
+  <div id="header"></div>
     <header>
         <nav>
             <div class="logo"><a href="">EVER <span class="aniplus">+</span></a></div>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Sign Up</a></li>
+                <li><a href="#header" id="homeScroll">Home</a></li>
+                <li><a href="#portfolio" id="portfolioScroll">Portfolio</a></li>
+                <li><a href="#aboutus" id="aboutusScroll">About Us</a></li>
+                <li><a href="#signup" id="regbutton">Sign Up</a></li>
             </ul>
          </nav>
           </header>
@@ -33,12 +35,28 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-100" src="img/cityone.jpg" alt="First slide">
+      <div class="carousel-caption">
+       <h2>Let your soul stand cool and composed before a million</h2> 
+       <q>Walt Whitman</q>
+
+      </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="img/citytwo.jpg" alt="Second slide">
+        <div class="carousel-caption">
+       <h2>It's cool to be different and just be who you are and shock people in a good way!
+</h2> 
+       <q>Brendon Urie</q>
+
+      </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="img/citythree.jpg" alt="Third slide">
+        <div class="carousel-caption">
+       <h2>There's something cool about being a stealth classic!</h2> 
+       <q>John Cameron Mitchell</q>
+
+      </div>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -53,6 +71,67 @@
 
 
 
+<main>
+  <section class="portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+  <div class="gridtable">
+  <div class="one"><p>Hello</p></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="four"></div>
+  <div class="five"></div>
+  <div class="six"></div>
+  <div class="seven"></div>
+  </div>
+  </section>
+  
+  
+  
+  <article id="aboutus">
+    <div class="aboutus">
+      <div class="aboutimg"></div>
+       <div class="aboutdesc"><h2>About Us</h2>
+       <p>
+  A portfolio is a grouping of financial assets such as stocks, bonds, commodities, currencies and cash equivalents, as well as their fund counterparts, including mutual,
+exchange-traded and closed funds. A portfolio can also consist of non publicly tradable securities, like real estate, art, and private investments. </p>
+       </div>
+      
+    </div>
+  </article>
+  
+  
+  
+  
+  
+</main>
+<!--modal section-->
+        <div class="bg-modal">
+            <div class="modal-content">
+                <div class="close">+</div>
+                <img src="img/formicon.png" alt="form-icon" class="formimg">
+                <form>
+                    <fieldset>
+                        <legend>Sign Up</legend>
+                        <br>
+                        <label> Enter your name: 
+      <input type="text" name="user-name" placeholder="Name:" minlength="2" maxlength="15" autofocus required>
+      </label>
+                        <br>
+                        <label> Enter your surname: 
+      <input type="text" name="user-surname" placeholder="Surname:" minlength="2" maxlength="15" required>
+      </label>
+                        <br>
+                        <label> Enter your email: 
+      <input type="email" name="user-email" placeholder="Email:" minlength="2" required>
+      </label>
+                        <br>
+                        <br>
+                        <input type="submit" value="Send" class="button_send">
+                        <input type="reset" value="Reset" class="button_reset">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
 
 
 
@@ -60,19 +139,26 @@
 
 
 
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    <main></main>
-    <footer></footer>
+    <footer>
+      
+      
+      <div class="mainfooter">
+            <div id="socialnetwork">
+                
+                <a href="facebook.com"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="twitter.com"> <img src="img/twitter.png" alt="twitter"></a>
+                <a href="google.com"><img src="img/google.png" alt="google"></a>
+                <a href="instagram.com"><img src="img/instagram.png" alt="instagram"></a>
+            </div>
+            <p>© Copyright TWC Product and Technology LLC, 2018</p>
+        </div>
+      
+      
+  
+      
+      
+      
+    </footer>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/index.js"></script> 
 
