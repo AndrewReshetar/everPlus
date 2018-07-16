@@ -62,7 +62,6 @@ header nav .logo a {
     animation-name: spin;
     animation-duration: 2200ms;
     animation-iteration-count: infinite;
-    position: absolute;
     animation-timing-function: linear;
 }
 .aniplus:hover {
