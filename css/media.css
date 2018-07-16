@@ -1,0 +1,125 @@
+@media screen and (max-width:780px) {
+    header {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 100;
+    }
+    header nav ul li {
+        font-size: 1em;
+    }
+    header nav .logo a {
+        font-size: 1.5em;
+    }
+    .carousel-inner h2 {
+        font-size: 2em;
+    }
+    article .aboutdesc h2 {
+        font-size: 1.6em;
+    }
+    article .aboutdesc p {
+        left: 20px;
+        position: relative;
+        font-size: 1em;
+    }
+    footer .mainfooter #socialnetwork {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 40px;
+        right: 5px;
+    }
+    footer .mainfooter #socialnetwork a {
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width:660px) {
+    .carousel-inner h2 {
+        font-size: 1em;
+    }
+    .gridtable {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4px;
+        grid-auto-rows: minmax(100px, auto);
+        margin: 0 2%;
+        padding: 3px;
+    }
+    .three {
+        grid-column: 1 / 5;
+        grid-row: 10 / 14;
+        background-position: top;
+    }
+    footer p {
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width:560px) {
+    header nav ul li {
+        font-size: 0.8em;
+    }
+    .gridtable {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+        margin: 0 2%;
+        padding: 3px;
+    }
+    .three {
+        display: none;
+    }
+    .seven {
+        display: none;
+    }
+    article .aboutdesc p {
+        left: 10px;
+        position: relative;
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width:500px) {
+    header nav .logo {
+        display: none;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    header nav ul li {
+        margin-left: 10px;
+        font-size: 1em;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    header nav ul li a {
+        color: #fff;
+    }
+    footer .mainfooter #socialnetwork a {
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width:360px) {
+    footer .mainfooter #socialnetwork {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 15px;
+        bottom: 5px;
+        right: 5px;
+    }
+    footer p {
+        font-size: 0.7em;
+        position: relative;
+        top: 30px;
+        left: 1%;
+        float: none;
+    }
+    header nav ul li {
+        margin-left: 5px;
+        font-size: .8em;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+}
