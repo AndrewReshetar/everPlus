@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Merienda');
-
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 body {
-    overflow-x: hidden;
+    overflow-x: hid-den;
+    max-width: 1348px;
+    margin:0 auto;
 }
 header {
     max-width: 100%;
@@ -53,31 +54,6 @@ header nav .logo a {
     font-family: 'Merienda', cursive;
     text-decoration: none;
     cursor: pointer;
-}
-.aniplus {
-    margin-left: 5px;
-    top:20px;
-    left:125px;
-    position: absolute;
-    animation-name: spin;
-    animation-duration: 2200ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.aniplus:hover {
-    animation-name: spin;
-    animation-duration: 600ms;
-    animation-iteration-count: infinite;
-    position: absolute;
-    animation-timing-function: linear;
-}
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 #carousel {
     position: relative;
@@ -227,6 +203,10 @@ footer p {
     margin-top: .7%;
     float: left;
     color: #5c5c5e;
+    height:35px;
+    position:relative;
+    top:35px;
+    margin-bottom: 0;
 }
 footer .mainfooter #socialnetwork {
     display: flex;
@@ -280,7 +260,7 @@ input {
     cursor: pointer;
 }
 .close:hover {
-    transform: rotate(360deg);
+    transform: rotate(90deg);
     animation-iteration-count: infinite;
 }
 .button_send {
@@ -310,3 +290,25 @@ input {
 .button_reset:hover {
     background-color: #ce3c37;
 }
+.closeWin{
+    display: none;
+}
+.openWin{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+
+
+
+
+
+

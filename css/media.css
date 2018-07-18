@@ -10,9 +10,18 @@
         font-size: 1em;
     }
     header nav .logo a {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
-    .carousel-inner h2 {
+    .aniplus{
+        left:110px;
+    }
+    .carousel-inner img {
+        height: 650px;
+    }
+     .carousel{
+        height:660px;
+    }
+     .carousel-inner h2 {
         font-size: 2em;
     }
     article .aboutdesc h2 {
@@ -35,9 +44,18 @@
     }
 }
 @media screen and (max-width:660px) {
+    .carousel-inner img {
+        height: 650px;
+    }
+     .carousel{
+        height:660px;
+    }
     .carousel-inner h2 {
         font-size: 1em;
     }
+    .carousel-caption h2 {
+         font-size: 1.9em;
+     }
     .gridtable {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -52,12 +70,22 @@
         background-position: top;
     }
     footer p {
-        font-size: 0.7em;
+        font-size: 0.8em;
+        padding-left: 2px;
     }
 }
 @media screen and (max-width:560px) {
+    .carousel-caption h2 {
+         font-size: 1.8em;
+     }
     header nav ul li {
         font-size: 0.8em;
+    }
+    .carousel-inner img {
+        height: 640px;
+    }
+     .carousel{
+        height:630px;
     }
     .gridtable {
         display: grid;
@@ -73,16 +101,22 @@
     .seven {
         display: none;
     }
+    article .aboutimg{
+        display: none;
+    }
     article .aboutdesc p {
-        left: 10px;
-        position: relative;
-        font-size: 0.8em;
+        left:4px;
+        position:relative;
+        font-size: 1.3em;
     }
 }
 @media screen and (max-width:500px) {
     header nav .logo {
         display: none;
     }
+    .carousel-caption h2 {
+         font-size: 1.8em;
+     }
     header nav ul {
         display: flex;
         justify-content: space-around;
@@ -94,15 +128,37 @@
         margin-top: 10px;
     }
     header nav ul li a {
-        color: #fff;
+        color: #303030;
     }
     footer .mainfooter #socialnetwork a {
         margin-right: 5px;
     }
+    footer .mainfooter #socialnetwork{
+        justify-content:space-around;
+        top:0;
+        margin-bottom: 12px;
+    }
+    footer .mainfooter p {
+        font-size: 0.8em;
+        position: relative;
+        height:50px;
+        margin:0 20 0 10px;
+        top: 30px;
+        left:1%;
+        float: none;
+        padding-left:0;
+    }
 }
 @media screen and (max-width:360px) {
+     .carousel-caption h2 {
+         font-size: 1.4em;
+     }
+     header nav ul li a {
+        font-size: 1.4em;
+    }
     footer .mainfooter #socialnetwork {
         display: flex;
+        align-items:flex-end;
         justify-content: space-around;
         position: relative;
         top: 15px;
@@ -110,11 +166,12 @@
         right: 5px;
     }
     footer p {
-        font-size: 0.7em;
         position: relative;
         top: 30px;
         left: 1%;
         float: none;
+        padding-left:0;
+        font-size: 0.7em;
     }
     header nav ul li {
         margin-left: 5px;

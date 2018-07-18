@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    if ($(window).scrollTop() >= 450) {
+    if ($(window).scrollTop() >= 300) {
         $('header').addClass('scroll');
         $('header nav ul li').addClass('navscroll');
         $('.logo').addClass('logoscroll');

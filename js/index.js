@@ -1,7 +1,7 @@
-document.getElementById('regbutton').addEventListener('click', function() {
-    document.querySelector('.bg-modal').style.display = 'flex';
+document.querySelector('#regbutton').addEventListener('click', function() {
+    document.querySelector('.bg-modal').className = 'openWin';
 });
 document.querySelector('.close').addEventListener('click', function() {
-    document.querySelector('.bg-modal').style.display = 'none';
+    document.querySelector('.openWin').className = 'closeWin';
 });
 
